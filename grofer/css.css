@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+body{ background:#fff; margin:0px; padding:0px; font-family:"Arial";}
+*{ margin:0px; padding:0px;}
+.wrapper{ width:1200px; height:900px; background:#F60; margin:0px auto; font-weight:normal;}
+.wrapper h1{ text-align:center; padding-top:40px !important; padding:20px; font-weight:normal; color:#fff; }
+.wrapper p{ text-align:center; font-size:24px; color:#333}
+.upload-btn{ width:20%; padding:10px; text-align:center; margin:0px auto; background:#333; color:#fff; margin-top:50px; border-radius:2px;}
+.frame-area{ width:400px; height:400px; background:#fff; border:1px solid #000;margin:0px auto; margin-top:100px;}
+ article, aside, figure, footer, header, hgroup, menu, nav, section { display: block; }
+.social-media-button-back{ width:50%; margin:0px auto; padding-left:30%; margin-top:30px;}
+.fb-share-button{ float:left;}
+.fb-share-button img{ height:22px; width:60px;}

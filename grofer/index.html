@@ -1,0 +1,71 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css.css" rel="stylesheet" type="text/css"/>
+<title>Grofer's</title>
+
+
+</head>
+
+
+
+<body>
+<div class="wrapper">
+<h1>Upload and share your images.</h1>
+<p>Drag 'n drop anywhere you want or click below to upload images.</p>
+<div class="upload-btn"><input type='file' /></div><!--upload-btn-->
+
+
+
+
+<div class="social-media-button-back">
+<!--facebook -->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.8";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<div class="fb-share-button" data-href="" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse"><img src="images/FB-Share-Button.png"/></a></div>
+<span class="st_sharethis" st_url="http://sharethis.com" st_title="Sharing is great!"></span>
+<!--twitter -->
+<a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+        </div>
+        
+        
+		<div class="fb-like" data-href="http://www.heroesgenerator.com/" data-send="true" data-width="450" data-show-faces="true"></div>
+		<div class="fb-comments" data-href="http://www.heroesgenerator.com/" data-width="430" data-num-posts="10"></div>
+
+<!--frame area-->
+<div class="frame-area"><img id="myImg" width="400px" height="400px" src="images/transparent.png" alt="" /></div><!--frame-area-->
+</div><!--wrapper-->
+
+
+<!--for frame set-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(function () {
+    $(":file").change(function () {
+        if (this.files && this.files[0]) {
+            var reader = new FileReader();
+            reader.onload = imageIsLoaded;
+            reader.readAsDataURL(this.files[0]);
+        }
+    });
+});
+
+function imageIsLoaded(e) {
+    $('#myImg').attr('src', e.target.result);
+};
+
+</script>
+
+
+
+
+</body>
+</html>
